@@ -1,0 +1,101 @@
+// /* color palette from <https://github.com/vuejs/theme> */
+
+// :root {
+//     --vt-c-white: #ffffff;
+//     --vt-c-white-soft: #f8f8f8;
+//     --vt-c-white-mute: #f2f2f2;
+//     --vt-c-black: #181818;
+//     --vt-c-black-soft: #222222;
+//     --vt-c-black-mute: #282828;
+//     --vt-c-indigo: #2c3e50;
+//     --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+//     --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+//     --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+//     --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+//     --vt-c-text-light-1: var(--vt-c-indigo);
+//     --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+//     --vt-c-text-dark-1: var(--vt-c-white);
+//     --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+// }
+
+
+// /* semantic color variables for this project */
+
+// :root {
+//     --color-background: var(--vt-c-white);
+//     --color-background-soft: var(--vt-c-white-soft);
+//     --color-background-mute: var(--vt-c-white-mute);
+//     --color-border: var(--vt-c-divider-light-2);
+//     --color-border-hover: var(--vt-c-divider-light-1);
+//     --color-heading: var(--vt-c-text-light-1);
+//     --color-text: var(--vt-c-text-light-1);
+//     --section-gap: 160px;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//      :root {
+//         --color-background: var(--vt-c-black);
+//         --color-background-soft: var(--vt-c-black-soft);
+//         --color-background-mute: var(--vt-c-black-mute);
+//         --color-border: var(--vt-c-divider-dark-2);
+//         --color-border-hover: var(--vt-c-divider-dark-1);
+//         --color-heading: var(--vt-c-text-dark-1);
+//         --color-text: var(--vt-c-text-dark-2);
+//     }
+// }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+body {
+
+    color: white;
+    background: #2b2b2b;
+    // .songname{
+    //     color: white!important;
+    // }
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+// theme.less文件
+// 实现换肤的样式函数
+/*
+    1.主色调，整体项目的主要颜色。
+    2.首页的背景颜色。
+    3.字体颜色。主要是和主色调来配合使用。
+    4.表格滑过的颜色。
+    5.表格选中的颜色。
+    6/7.首页每一项渐变的颜色，待定。
+*/
+//将项目中所有需要更改样式的css全部提取出来写在这个函数中，将其他地方写的样式都删掉，不然可能会权重不够 样式覆盖不掉。 所以删掉最好。
+//函数的参数可以给默认值，就是项目初始化时的默认样式。这里只复制了一部分样式。
+.theme(@background: #2b2b2b, @homebg: rgba(37, 37, 37, 1.00), @fontcolor: #fff, @hoverbg: #b9bec9, @activebg: #5193e2, @homeli1: rgba(47, 42, 65, 0.5), @homeli2: #2e3d50) {
+    // 头部的样式
+    .views {
+        background: @background!important;
+        color:  @fontcolor!important;
+        a{
+        color:  @fontcolor!important;
+        }
+
+
+    }
+  }
