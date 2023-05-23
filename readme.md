@@ -7,9 +7,9 @@ Usage
 
 npm install
 
-第一步：请先使用以下代码打开目录里的 NeteaseCloudMusicApi-master 网易云接口
+# 第一步：请先使用以下代码打开目录里的 NeteaseCloudMusicApi-master 网易云接口
 
-# npm start
+ npm start
 
 第二步：
 
