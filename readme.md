@@ -7,18 +7,6 @@ Usage
 
 npm install
 
-# 浏览器访问 localhost:8000
-
-npm run dev
-
-# 打包编译生成静态资源
-
-npm run build
-编译为桌面端应用
-当前配置仅编译为 mac 端桌面程序，如需 window、linux 版本只需在 build/package.json 中 script 字段下的--platform=darwin 后添加对应平台名称即可。
-
-重要！
-
 第一步：请先使用以下代码打开目录里的 NeteaseCloudMusicApi-master 网易云接口
 
 # npm start
@@ -29,7 +17,7 @@ npm run build
 
 # 安装相关依赖
 
-npm run install
+npm install
 
 # 预览效果
 
